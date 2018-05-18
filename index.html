@@ -29,8 +29,15 @@
             selector: '.background',
             maxParticles: 250,
             color: "#ffffff",
-            connectParticles: false,
+            connectParticles: true,
             responsive: [
+                {
+                    breakpoint: 1080,
+                    options: {
+                        maxParticles: 200,
+                        connectParticles: false
+                    }
+                },
                 {
                     breakpoint: 768,
                     options: {
