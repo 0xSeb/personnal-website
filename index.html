@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Welcome ...</title>
+    <meta name="description" content="@ms_dev_pro personnal website">
+    <meta name="author" content="ms_dev_pro">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" href="css/img/favicon.ico">
+</head>
+
+<body>
+<div class="container">
+    <h1> Sébastien MARCHAL</h1>
+    <p id="example2"></p>
+</div>
+
+<canvas class="background">
+</canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.js"></script>
+<script>
+    window.onload = function() {
+        Particles.init({
+            selector: '.background',
+            maxParticles: 250,
+            color: "#ffffff",
+            connectParticles: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    options: {
+                        maxParticles: 200,
+                        connectParticles: false
+                    }
+                }, {
+                    breakpoint: 425,
+                    options: {
+                        maxParticles: 100,
+                        connectParticles: false
+                    }
+                }, {
+                    breakpoint: 320,
+                    options: {
+                        maxParticles: 0 // disables particles.js
+                    }
+                }
+            ]
+        });
+        new TypeIt('#example2', {
+            speed: 75,
+            breakLines: false
+        })
+            .type("I'm a developer")
+            .pause(500)
+            .delete(9)
+            .type("hacker")
+            .pause(500)
+            .delete(7)
+            .type("n entrepreneur")
+            .pause(500)
+            .delete(14)
+            .type(" dreamer")
+            .pause(500)
+            .delete(7)
+            .type("reader")
+            .pause(500)
+            .delete(6)
+            .type("gamer")
+            .pause(500)
+            .delete(11)
+            .type("Meet me : <a style='color: white' href='https://www.linkedin.com/in/s%C3%A9bastien-marchal-56b962117/'>LinkedIn</a>, " +
+                "<a style='color: white' href='https://twitter.com/ms_dev_pro'>Twitter</a>, " +
+                "<a style='color: white' href='https://github.com/ms-dev-pro'>GitHub</a>")
+    };
+</script>
+<div style="display: none">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></body>
+</html>
